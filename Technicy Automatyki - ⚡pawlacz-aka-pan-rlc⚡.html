@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<!-- saved from url=(0131)file:///C:/Users/Sztuka_/AppData/Local/Temp/Rar$EXa820.49094/Technicy%20Automatyki%20-%20%E2%9A%A1pawlacz-aka-pan-rlc%E2%9A%A1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <style>
+        /* === GENERAL === */
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+    white-space: pre-wrap;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.emoji {
+    width: 24px;
+    height: 24px;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+.emoji--small {
+    width: 16px;
+    height: 16px;
+}
+
+.emoji--large {
+    width: 32px;
+    height: 32px;
+}
+
+.mention {
+    font-weight: 600;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 5px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 600;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;    
+}
+
+.chatlog__reaction {
+    margin: 6px 2px 2px 2px;
+    padding: 2px 6px 2px 2px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-emoji {
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.chatlog__reaction-count {
+    font-size: .875em;
+    vertical-align: middle;
+}
+/* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #ffffffb3;
+}
+
+a {
+    color: #0096cf;
+}
+
+.pre {
+    background-color: #2f3136;
+}
+
+.pre--multiline {
+    border-color: #282b30;
+    color: #839496;
+}
+
+.mention {
+    background-color: #738bd71a;
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: #ffffff0a;
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__edited-timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__embed-content-container {
+    background-color: #2e30364d;
+    border-color: #2e303699;
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: #ffffff99;
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: #ffffff99;
+}
+
+.chatlog__embed-footer {
+    color: #ffffff99;
+}
+
+.chatlog__reaction {
+    background-color: #ffffff0a;
+}
+
+.chatlog__reaction-count {
+    color: #ffffff4d;
+}
+    </style>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1171c60186395172db5d3a2fb008cdb4.png">
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">Technicy Automatyki</div>
+        <div class="info__channel-name">⚡pawlacz-aka-pan-rlc⚡</div>
+        
+            <div class="info__channel-topic"></div>
+
+        <div class="info__channel-message-count">132 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:31 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/7.28.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/7.28.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/7.28_2.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/7.28_2.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/tumaczenia_co_robi_j_we_wzorze.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/tumaczenia_co_robi_j_we_wzorze.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            co
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            gówno
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            1:0
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            powiedz mu ze rlc nie nieliśmy
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            XDD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            oh well
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">23-Apr-20 09:59 AM</span>
+
+                        <div class="chatlog__content">
+                            podaj sie do dymisji
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            pamiętaj
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            prezydent
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            odpowiada
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            przed bogiem
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i historią
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            zdetronizujcie mnie
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            nie no powiedz
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            bo sie wyjebiemy na tym
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            oj brahu
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            niech nam pokaze
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            Ja się wyjebałem 3 teamty temu
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            I jak mu powiem
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            To się będzie wypytywał czego nie rozumiem
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:02 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/nawet_nie_wiem_co_to.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/nawet_nie_wiem_co_to.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne2.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne2.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne_1.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne_1.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne3.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne3.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:32 AM</span>
+
+                        <div class="chatlog__content">
+                            7.75<br>7.76
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:38 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(1).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(1).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(2).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(2).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">23-Apr-20 10:40 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne4.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne4.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne5.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne5.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne6.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/wazne6.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Apr-20 08:42 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/95265860_232701044498009_7400154021656264704_n.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/95265860_232701044498009_7400154021656264704_n.jpg">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            to I
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i=0,2+i
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            to git czy powinno być razy
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:00 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/paint.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/paint.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:04 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_090423.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_090423.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            ej to co wysłałem to git?
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_091905.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_091905.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:21 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(3).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(3).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            yikes
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(4).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(4).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:24 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_092445.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_092445.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:26 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(5).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(5).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(6).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(6).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(7).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(7).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(8).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(8).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(9).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(9).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(10).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(10).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(11).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(11).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(12).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(12).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(13).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(13).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(14).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(14).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:40 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(15).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(15).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(16).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(16).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(17).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(17).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:42 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(18).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(18).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:42 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(19).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(19).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            f
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:42 AM</span>
+
+                        <div class="chatlog__content">
+                            fffffffffffffff
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:43 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(20).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(20).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:43 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(21).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(21).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:44 AM</span>
+
+                        <div class="chatlog__content">
+                            filtr pasmowo przepustowy - notatka i pasmowo zaporowy
+
+                                <span class="chatlog__edited-timestamp" title="30-Apr-20 09:45 AM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Pinned a message.
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:44 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(22).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(22).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(23).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(23).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:47 AM</span>
+
+                        <div class="chatlog__content">
+                            Jak wy tak ładnie te screeny robicie
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:47 AM</span>
+
+                        <div class="chatlog__content">
+                            shift +  windows + s
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">30-Apr-20 09:55 AM</span>
+
+                        <div class="chatlog__content">
+                            Shit dzieki
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 10:23 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(24).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(24).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">30-Apr-20 10:23 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_101041.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/Adnotacja_2020-04-30_101041.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Apr-20 10:33 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(25).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(25).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(26).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(26).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">07-May-20 09:03 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/20200507_090233.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/20200507_090233.jpg">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/20200507_090553.jpg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/20200507_090553.jpg">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:07 AM</span>
+
+                        <div class="chatlog__content">
+                            która
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            ą
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            ą
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            notatkę  mieliśmy
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            przepisać z eie
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/981c5bebb7e72ccfac76bd201a71ce41.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Graciarz#1263">Graciarz</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            Flitry i
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            marek pawłowski częęęęęęstotliwość graniczna
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/981c5bebb7e72ccfac76bd201a71ce41.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Graciarz#1263">Graciarz</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            rezonans
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            marek pawłowski i drukarka hrrrrrrrrrrrrrr
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:08 AM</span>
+
+                        <div class="chatlog__content">
+                            dobra wyebane
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            dam w jakości
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            144 p
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i sie nie kapnie xd
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            zrobie zdjęcie moją nokią 3310
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            ale on nic nie mowil ze mamy mu to wyslac
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            ale jakby mówił
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            marek pawłowski i zaloty do mickiewicz
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            on nigdy pracy domowej nie sprawdza przeciez
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            ta kuraw
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a jak mieliśmy apke
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            zainstalować na tele
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            to sprawdzał
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            Kupczyk wiesz co to RiGCZ?
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            nie spam
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:09 AM</span>
+
+                        <div class="chatlog__content">
+                            JA Z/W
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">07-May-20 09:10 AM</span>
+
+                        <div class="chatlog__content">
+                            poszło sprzęgło
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/febf127f141e674d2ade809d338a9d9c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Hrabia#1600">Hrabia</span>
+                <span class="chatlog__timestamp">07-May-20 09:11 AM</span>
+
+                        <div class="chatlog__content">
+                            poszło sprzęgło
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">07-May-20 09:18 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(27).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(27).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            w rezonansie wymuszam duży przepływ prądu
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(28).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(28).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(29).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(29).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(30).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(30).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:42 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(31).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(31).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">07-May-20 09:48 AM</span>
+
+                        <div class="chatlog__content">
+                            Pytania<br>1. zastosowanie liczb zespolonych w zadaniach<br>2. stała czasowa<br>3.co to są impulsy<br>4.wskazy
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 09:52 AM</span>
+
+                        <div class="chatlog__content">
+                            5. analiza fouriera
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">07-May-20 10:19 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(32).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(32).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">07-May-20 10:19 AM</span>
+
+                        <div class="chatlog__content">
+                            dawajcie te
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            4 pytania
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">07-May-20 12:13 PM</span>
+
+                        <div class="chatlog__content">
+                            jaki savaaaage <span class="mention" title="Blasted#3539">@Blasted</span>
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(33).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(33).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">07-May-20 12:17 PM</span>
+
+                        <div class="chatlog__content">
+                            chyba się po tym nie pozbiera
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            ❤️
+                                    </span>
+                                    <span class="chatlog__reaction-count">2</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">20-May-20 02:52 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/97016960_185160802645826_2360313773031424000_n.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/97016960_185160802645826_2360313773031424000_n.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">21-May-20 08:17 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/przed_sprawdzianem.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/przed_sprawdzianem.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">21-May-20 08:18 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/702783668724170823/712912065316257822/Wzory_3.pdf">
+                                
+                                    Attachment: Wzory_3.pdf (61,9 KB)
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">21-May-20 08:33 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(34).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(34).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(35).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(35).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(36).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/unknown(36).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">21-May-20 08:56 AM</span>
+
+                        <div class="chatlog__content">
+                            Jak I=0,07 to nie  da się tego zaokrąglić do 0,1?
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Bo taka odpowiedź by była
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">21-May-20 08:56 AM</span>
+
+                        <div class="chatlog__content">
+                            masz ok 30% błędu
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">21-May-20 08:56 AM</span>
+
+                        <div class="chatlog__content">
+                            dobra to minimalna pensje 1500zł zaokrąglam do 2000
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">21-May-20 08:56 AM</span>
+
+                        <div class="chatlog__content">
+                            chyba nie
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">21-May-20 11:23 AM</span>
+
+                        <div class="chatlog__content">
+                            Jak jest wzór na częstotliwość graniczną filtru RL fg = R/(2•Π•L) to jak dobroć Q zmaleje to rezystancja R wzrośnie i według tego wzoru częstotliwość graniczna wzrośnie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            A powinna zmaleć
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡pawlacz-aka-pan-rlc⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">21-May-20 11:35 AM</span>
+
+                        <div class="chatlog__content">
+                            Idź pan w chuj
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+
+</body></html>

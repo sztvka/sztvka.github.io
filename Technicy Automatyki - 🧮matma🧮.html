@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)file:///C:/Users/Sztuka_/AppData/Local/Temp/Rar$EXa820.49094/Technicy%20Automatyki%20-%20%F0%9F%A7%AEmatma%F0%9F%A7%AE.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Technicy Automatyki - 🧮matma🧮</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <style>
+        /* === GENERAL === */
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+    white-space: pre-wrap;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.emoji {
+    width: 24px;
+    height: 24px;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+.emoji--small {
+    width: 16px;
+    height: 16px;
+}
+
+.emoji--large {
+    width: 32px;
+    height: 32px;
+}
+
+.mention {
+    font-weight: 600;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 5px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 600;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;    
+}
+
+.chatlog__reaction {
+    margin: 6px 2px 2px 2px;
+    padding: 2px 6px 2px 2px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-emoji {
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.chatlog__reaction-count {
+    font-size: .875em;
+    vertical-align: middle;
+}
+/* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #ffffffb3;
+}
+
+a {
+    color: #0096cf;
+}
+
+.pre {
+    background-color: #2f3136;
+}
+
+.pre--multiline {
+    border-color: #282b30;
+    color: #839496;
+}
+
+.mention {
+    background-color: #738bd71a;
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: #ffffff0a;
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__edited-timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__embed-content-container {
+    background-color: #2e30364d;
+    border-color: #2e303699;
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: #ffffff99;
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: #ffffff99;
+}
+
+.chatlog__embed-footer {
+    color: #ffffff99;
+}
+
+.chatlog__reaction {
+    background-color: #ffffff0a;
+}
+
+.chatlog__reaction-count {
+    color: #ffffff4d;
+}
+    </style>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="./Technicy Automatyki - 🧮matma🧮_files/1171c60186395172db5d3a2fb008cdb4.png">
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">Technicy Automatyki</div>
+        <div class="info__channel-name">🧮matma🧮</div>
+        
+            <div class="info__channel-topic"></div>
+
+        <div class="info__channel-message-count">113 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">06-May-20 11:39 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Blasted#3539">@Blasted</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 11:41 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">06-May-20 11:45 AM</span>
+
+                        <div class="chatlog__content">
+                            <a href="http://matematyka.pisz.pl/forum/200105.html">http://matematyka.pisz.pl/forum/200105.html</a>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">06-May-20 11:49 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(1).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(1).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 11:50 AM</span>
+
+                        <div class="chatlog__content">
+                            2x - 3y = 0                               <br>3y = 2x                                   <br>y= 2/3x (+0)<br><br>y=2/3x<br><br>mx -(2-m)y + 5 = 0<br>(2-m)y = mx + 5<br>y = (m/(2-m))x + 5/(2-m)<br><br>m/(2-m) = 2/3<br>m= 2/3 * (2 - m)<br>m= 4/3 - 2/3m<br>5/3m = 4/3<br>m = 4/3 * 3/5 <br>m=0,8
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/b2372efc274e1d26a988fb0f2f5d4c5d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="BosmanN7725#7077">BosmanN7725</span>
+                <span class="chatlog__timestamp">06-May-20 11:50 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(2).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(2).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 11:52 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(3).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(3).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(4).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(4).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(5).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(5).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(6).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(6).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">06-May-20 11:58 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(7).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(7).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:01 PM</span>
+
+                        <div class="chatlog__content">
+                            a = (y2-y1)/(x2-x1)<br>a= (0-1)/(1,5-0)<br>a= -1/1,5<br>a= -2/3<br><br>b=1<br>f(x) = -2/3x + 1<br>-1,5 * -2/3 = 1<br>1+1 = 2<br>Dla x&lt;-1,5 funkcja f przyjmuje wartości większe od 2
+
+                                <span class="chatlog__edited-timestamp" title="06-May-20 12:05 PM">(edited)</span>
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(8).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(8).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            do tego to co na górze
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">06-May-20 12:02 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(9).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(9).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/b2372efc274e1d26a988fb0f2f5d4c5d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="BosmanN7725#7077">BosmanN7725</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            jak napisać pierwiastek?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            sqrt(liczba)
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            albo liczba^(1/2)
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            big brain time
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/0.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="KRAXI 111#1650">KRAXI 111</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            (y2-y1) ta jednynka idwojak to indkes dolny??
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            durzy muzk czaz
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:05 PM</span>
+
+                        <div class="chatlog__content">
+                            tak
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            ale w formsie indexu dolnego nie dasz
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(10).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(10).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            a) y=5/6x    b) -3y = 2x-6     y= -2/3x +2 c) sqrt(8)y = sqrt(2)    y = sqrt(1/4)    y = 1/2
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">06-May-20 12:09 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(11).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(11).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            a chyba chłopaki
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:15 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(12).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(12).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(13).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(13).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">06-May-20 12:18 PM</span>
+
+                        <div class="chatlog__content">
+                            Kurwa mać prądu nie mam
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Zajebiście
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:18 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(14).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(14).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            Trzeba było się z prądem nie bawić
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:19 PM</span>
+
+                        <div class="chatlog__content">
+                            trzeba było płacić za prąd
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:19 PM</span>
+
+                        <div class="chatlog__content">
+                            niech ktoś pójdzie do grzejszczak
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            powiedzieć że kolege
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            z discorda wywaliło
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">06-May-20 12:19 PM</span>
+
+                        <div class="chatlog__content">
+                            I nawet z telefonu nie udostoenie internetu bo nie mam wifi
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:19 PM</span>
+
+                        <div class="chatlog__content">
+                            i prądu nie ma ;3
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            wejdz na teamsy
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i napisz do niej że ci wywaliło
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">06-May-20 12:22 PM</span>
+
+                        <div class="chatlog__content">
+                            Superancko xd
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:26 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(15).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(15).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            y1= -2<br>a=(y2-y1)/(x2-x1)<br>a2=(7+2)/(-1+4)<br>a2=9/3<br>a2=3<br>y2=3x+b<br>7=-3+b<br>b=10<br>y2=3x+10
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            y1= -2       a=(y2-y1)/(x2-x1)          a2=(7+2)/(-1+4)         a2=9/3 a2=3      y2=3x+b 7=-3+b     b=10    y2=3x+10   P=a (razy) h P=4*9 =36
+
+                                <span class="chatlog__edited-timestamp" title="06-May-20 12:29 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">06-May-20 12:29 PM</span>
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            `
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:29 PM</span>
+
+                        <div class="chatlog__content">
+                            ``<span class="pre pre--inline"><br><br></span><span class="pre pre--inline"><br></span><br>\<br>```
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">06-May-20 12:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <span class="pre pre--inline">y1= -2       a=(y2-y1)/(x2-x1)          a2=(7+2)/(-1+4)         a2=9/3 a2=3      y2=3x+b 7=-3+b     b=10    y2=3x+10   P=a (razy) h P=4*9 =36</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <div class="pre pre--multiline">despacito</div>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/c26c0b2c5f4b56d7d3b848fd5a8fde14.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="carloss#9053">carloss</span>
+                <span class="chatlog__timestamp">06-May-20 12:29 PM</span>
+
+                        <div class="chatlog__content">
+                            <div class="pre pre--multiline"> chuj </div>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:30 PM</span>
+
+                        <div class="chatlog__content">
+                            jebacdisa
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:32 PM</span>
+
+                        <div class="chatlog__content">
+                            (4a +5) =/=0   4a =/= -5   a=/=-1,25 dla wartości różnych od -1,25, funkcja f(x) =(4a+5)x + a-7 ma miejsce zerowe.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(16).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(16).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/b2372efc274e1d26a988fb0f2f5d4c5d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="BosmanN7725#7077">BosmanN7725</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(17).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(17).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            które do tego?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/c26c0b2c5f4b56d7d3b848fd5a8fde14.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="carloss#9053">carloss</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            ^^^^^^
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            c
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            c
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            C
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/c26c0b2c5f4b56d7d3b848fd5a8fde14.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="carloss#9053">carloss</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            c
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            u
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            j
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            C
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            J
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            a
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:33 PM</span>
+
+                        <div class="chatlog__content">
+                            N
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            I
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            E
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Z
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            R
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            O
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            N
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            I
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            B
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            G
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            I
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Ł
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            G
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            E
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            R
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-May-20 12:34 PM</span>
+
+                        <div class="chatlog__content">
+                            N
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            IC
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Z
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Ł
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            E
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            G
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            O
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">06-May-20 12:35 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(18).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(18).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/b2372efc274e1d26a988fb0f2f5d4c5d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="BosmanN7725#7077">BosmanN7725</span>
+                <span class="chatlog__timestamp">06-May-20 12:35 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(19).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(19).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">06-May-20 12:35 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(20).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(20).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - 🧮matma🧮_files/unknown(21).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - 🧮matma🧮_files/unknown(21).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Marchewek#5743">Marchewek</span>
+                <span class="chatlog__timestamp">06-May-20 12:36 PM</span>
+
+                        <div class="chatlog__content">
+                            GOHA GOHA GOHA GOHA GOHA GOHA 3ZŁOTE
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - 🧮matma🧮_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">13-May-20 09:23 AM</span>
+
+                        <div class="chatlog__content">
+                            PYR PYR PYR PYR PYR ODPALAM MALUCHA PYR PYR PYR PYR PYR PYR  10 ZŁOTYCH
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+
+</body></html>

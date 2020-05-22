@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0142)file:///C:/Users/Sztuka_/AppData/Local/Temp/Rar$EXa820.49094/Technicy%20Automatyki%20-%20%E2%9A%A1automatyczne-zadania-dla-pluty%E2%9A%A1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <style>
+        /* === GENERAL === */
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+    white-space: pre-wrap;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.emoji {
+    width: 24px;
+    height: 24px;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+.emoji--small {
+    width: 16px;
+    height: 16px;
+}
+
+.emoji--large {
+    width: 32px;
+    height: 32px;
+}
+
+.mention {
+    font-weight: 600;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 5px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 600;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;    
+}
+
+.chatlog__reaction {
+    margin: 6px 2px 2px 2px;
+    padding: 2px 6px 2px 2px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-emoji {
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.chatlog__reaction-count {
+    font-size: .875em;
+    vertical-align: middle;
+}
+/* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #ffffffb3;
+}
+
+a {
+    color: #0096cf;
+}
+
+.pre {
+    background-color: #2f3136;
+}
+
+.pre--multiline {
+    border-color: #282b30;
+    color: #839496;
+}
+
+.mention {
+    background-color: #738bd71a;
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: #ffffff0a;
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__edited-timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__embed-content-container {
+    background-color: #2e30364d;
+    border-color: #2e303699;
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: #ffffff99;
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: #ffffff99;
+}
+
+.chatlog__embed-footer {
+    color: #ffffff99;
+}
+
+.chatlog__reaction {
+    background-color: #ffffff0a;
+}
+
+.chatlog__reaction-count {
+    color: #ffffff4d;
+}
+    </style>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1171c60186395172db5d3a2fb008cdb4.png">
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">Technicy Automatyki</div>
+        <div class="info__channel-name">⚡automatyczne-zadania-dla-pluty⚡</div>
+        
+            <div class="info__channel-topic"></div>
+
+        <div class="info__channel-message-count">129 messages</div>
+        
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:14 AM</span>
+
+                        <div class="chatlog__content">
+                            ;d
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:52 AM</span>
+
+                        <div class="chatlog__content">
+                            ;-;
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:54 AM</span>
+
+                        <div class="chatlog__content">
+                            początek końca
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:54 AM</span>
+
+                        <div class="chatlog__content">
+                            to fakt
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            -play ile dałbym by zapomnieć cie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            -play <a href="https://www.youtube.com/watch?v=CC4vVzA-OEU">https://www.youtube.com/watch?v=CC4vVzA-OEU</a>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,0,0,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+                                            <div class="chatlog__embed-author">
+
+                                                    <span class="chatlog__embed-author-name">
+                                                            <a class="chatlog__embed-author-name-link" href="https://www.youtube.com/channel/UCOBerN4IKrXR1jJsNzAqYVQ">Paltis1</a>
+                                                    </span>
+                                            </div>
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.youtube.com/watch?v=CC4vVzA-OEU">Yuki Yuki Yuki Earape+Bass Boost</a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">Plez Martin don play dis 4 me</div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/maxresdefault.jpg">
+                                                <img class="chatlog__embed-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/maxresdefault.jpg">
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/0e7adc5d634d957b7725021c067bfd87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Groovy#7254">Groovy</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:57 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">Queued <a href="https://www.youtube.com/watch?v=CC4vVzA-OEU">Yuki Yuki Yuki Earape+Bass Boost</a> [<span class="mention" title="Suicide#6766">@Suicide</span>]</div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">30-Mar-20 10:57 AM</span>
+
+                        <div class="chatlog__content">
+                            -skip
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            👌
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">30-Mar-20 11:46 AM</span>
+
+                        <div class="chatlog__content">
+                            -play metin 2 m1 music
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">31-Mar-20 10:45 AM</span>
+
+                        <div class="chatlog__content">
+                            jesteśmy w dupie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            xd
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">31-Mar-20 03:27 PM</span>
+
+                        <div class="chatlog__content">
+                            +1
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:26 AM</span>
+
+                        <div class="chatlog__content">
+                            -play sextechno
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            -play sex techno
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/0e7adc5d634d957b7725021c067bfd87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Groovy#7254">Groovy</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:27 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">Queued <a href="https://www.youtube.com/watch?v=mGKCQImgSx8">Sex, Drugs &amp; Techno 2</a> [<span class="mention" title="PanProfesor#8584">@PanProfesor</span>]</div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:27 AM</span>
+
+                        <div class="chatlog__content">
+                            -play <a href="https://www.youtube.com/watch?v=0UFZc2QmAa4">https://www.youtube.com/watch?v=0UFZc2QmAa4</a>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,0,0,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+                                            <div class="chatlog__embed-author">
+
+                                                    <span class="chatlog__embed-author-name">
+                                                            <a class="chatlog__embed-author-name-link" href="https://www.youtube.com/channel/UC60CMMAW6HehwXvMdzIKo5Q">Patrick willert jacobsen</a>
+                                                    </span>
+                                            </div>
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.youtube.com/watch?v=0UFZc2QmAa4">Sex techno</a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">Lækker musik</div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/hqdefault.jpg">
+                                                <img class="chatlog__embed-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/hqdefault.jpg">
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/0e7adc5d634d957b7725021c067bfd87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Groovy#7254">Groovy</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:27 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">Queued <a href="https://www.youtube.com/watch?v=0UFZc2QmAa4">Sex techno</a> [<span class="mention" title="PanProfesor#8584">@PanProfesor</span>]</div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:27 AM</span>
+
+                        <div class="chatlog__content">
+                            -skip
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            👌
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+                        <div class="chatlog__content">
+                            -skip
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            👌
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:33 AM</span>
+
+                        <div class="chatlog__content">
+                            -play metin 2 m1 music
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:35 AM</span>
+
+                        <div class="chatlog__content">
+                            -play mortal kombat
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/0e7adc5d634d957b7725021c067bfd87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Groovy#7254">Groovy</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:35 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">Queued <a href="https://www.youtube.com/watch?v=FJR1XCv1KME">Mortal Kombat Legends - Scorpion's Revenge - Official Johnny Cag…</a> [<span class="mention" title="PanProfesor#8584">@PanProfesor</span>]</div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:35 AM</span>
+
+                        <div class="chatlog__content">
+                            -skip
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            👌
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 08:38 AM</span>
+
+                        <div class="chatlog__content">
+                            -play jabol punk
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:00 AM</span>
+
+                        <div class="chatlog__content">
+                            no to chłopaki
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            dzisiejsza lekcja
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            będzie samą przyjemnością
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/c26c0b2c5f4b56d7d3b848fd5a8fde14.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="carloss#9053">carloss</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:00 AM</span>
+
+                        <div class="chatlog__content">
+                            JD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:00 AM</span>
+
+                        <div class="chatlog__content">
+                            JD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            hubert masz lepsze profilowe sobie ustaw
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            o
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            co
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/91635037_681155525985786_7141470477880393728_n.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/91635037_681155525985786_7141470477880393728_n.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            😍
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            XDDDDDDD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            XDDD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/c26c0b2c5f4b56d7d3b848fd5a8fde14.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="carloss#9053">carloss</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            xDDDDDDDDDD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:01 AM</span>
+
+                        <div class="chatlog__content">
+                            fotoshop is maj peszyn
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">02-Apr-20 09:02 AM</span>
+
+                        <div class="chatlog__content">
+                            Jesteś teraz jak sławny raper quebonafide po przejściach
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            ❤️
+                                    </span>
+                                    <span class="chatlog__reaction-count">2</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">03-Apr-20 02:02 PM</span>
+
+                        <div class="chatlog__content">
+                            łatwa biolka
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-Apr-20 09:57 AM</span>
+
+                        <div class="chatlog__content">
+                            filip
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            5 zadanie z 63 masz źle chyba
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            bo przy łączeniu równoległym
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            dodałeś rezystory jak w połączeniu szeregowym
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">06-Apr-20 10:34 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">06-Apr-20 11:20 AM</span>
+
+                        <div class="chatlog__content">
+                            W instrukcji obsługi podano, że:<br><br>1) bład pomiaru +/- 0,5% +/- 2D, rozdzielczość = 10 mV<br><br>2) błąd pomiaru +/- 1% +/- 2D, rozdzielczość = 10 uA
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            ⁉️
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">06-Apr-20 11:20 AM</span>
+
+                        <div class="chatlog__content">
+                            Ma  ktoś te zadania zrobione już?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">06-Apr-20 11:21 AM</span>
+
+                        <div class="chatlog__content">
+                            W instrukcji obsługi podano, że:<br><br>1) bład pomiaru +/- 0,5% +/- 2D, rozdzielczość = 10 mV<br><br>2) błąd pomiaru +/- 1% +/- 2D, rozdzielczość = 10 uA
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            ❔
+                                    </span>
+                                    <span class="chatlog__reaction-count">1</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">06-Apr-20 12:00 PM</span>
+
+                        <div class="chatlog__content">
+                            kamil nie denerwuj się
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">06-Apr-20 12:42 PM</span>
+
+                        <div class="chatlog__content">
+                            -play gdy miałem 3 lata
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/0e7adc5d634d957b7725021c067bfd87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Groovy#7254">Groovy</span>
+                <span class="chatlog__timestamp">06-Apr-20 12:42 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">Queued <a href="https://www.youtube.com/watch?v=w4tSqvMXhHw">Xayoo - Gdy miałem 3 lata.</a> [<span class="mention" title="Suicide#6766">@Suicide</span>]</div>
+
+                                    </div>
+
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/85d20cc73f063030a99ebdf3fa88cd6e.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="menelito69#5896">menelito69</span>
+                <span class="chatlog__timestamp">08-Apr-20 11:16 AM</span>
+
+                        <div class="chatlog__content">
+                            ! Run
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Runnnnnn
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/981c5bebb7e72ccfac76bd201a71ce41.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Graciarz#1263">Graciarz</span>
+                <span class="chatlog__timestamp">08-Apr-20 11:17 AM</span>
+
+                        <div class="chatlog__content">
+                            !run
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            !stop runnnnniung
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">08-Apr-20 11:17 AM</span>
+
+                        <div class="chatlog__content">
+                            TO NIE BIEGA
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/85d20cc73f063030a99ebdf3fa88cd6e.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="menelito69#5896">menelito69</span>
+                <span class="chatlog__timestamp">08-Apr-20 11:17 AM</span>
+
+                        <div class="chatlog__content">
+                            ! NUR
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/981c5bebb7e72ccfac76bd201a71ce41.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Graciarz#1263">Graciarz</span>
+                <span class="chatlog__timestamp">08-Apr-20 11:17 AM</span>
+
+                        <div class="chatlog__content">
+                            KURWA ROZJEBE SIE
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">16-Apr-20 08:36 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(1).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(1).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">16-Apr-20 08:36 AM</span>
+
+                        <div class="chatlog__content">
+                            ;d
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">16-Apr-20 03:35 PM</span>
+
+                        <div class="chatlog__content">
+                            <a href="https://www.copypastecharacter.com/arrows">https://www.copypastecharacter.com/arrows</a>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 08:16 AM</span>
+
+                        <div class="chatlog__content">
+                            1.Miernik analogowy – to rodzaj miernika wykorzystujący wskazówki odchylane za pomocą pola magnetycznego<br><br>2.Ustrój pomiarowy -  to podzespół miernika odpowiedzialny za wychylenie wskazówki umożliwiając pomiar.<br><br>3.<br>ze względu na rodzaj zastosowanego podzespołu, pod wpływem którego następuje wychylenie wskazówki (tzw. ustrój pomiarowy) na:<br>mierniki magnetoelektryczne<br>magnes trwały będący źródłem stałego pola magnetycznego,<br>cewkę nawiniętą na karkasie, którego oś trwale umocowana jest w polu magnesu,<br>sprężyny utrzymujące cewkę w punkcie równowagi zależnym od natężenia prądu elektrycznego.<br><br>mierniki elektromagnetyczne<br>-rdzeń nieruchomy<br>-rdzeń ruchomy<br>-uzwojenie<br>-tłumik<br>-kolektor zera<br><br>mierniki elektrodynamiczne<br>jest zbudowany z dwóch cewek: ruchomej I nieruchomej<br><br>mierniki ferrodynamiczne<br>Budowa oraz zasada działania ustroju ferrodynamicznego są podobne ustroju elektrodynamicznego. Różnicą jest wprowadzenie do obwodu magnetycznego ferromagnetyku. Powoduje to, że pole magnetyczne oddziaływające na cewkę ruchomą jest o wiele większe niż w przypadku ustroju elektrodynamicznego.<br><br>mierniki elektrostatyczne<br>-kondensator powietrzny<br>-elektroda ruchoma I nieruchoma
+
+                        </div>
+
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            <img class="emoji emoji--small" title="HmmCardo" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/696800542432821269.png">
+                                    </span>
+                                    <span class="chatlog__reaction-count">3</span>
+                                </div>
+                        </div>
+                        <div class="chatlog__content">
+                            5/6.<br><br><br>FERRODYNAMICZNY<br>Budowa oraz zasada działania ustroju ferrodynamicznego są podobne ustroju elektrodynamicznego. Różnicą jest wprowadzenie do obwodu magnetycznego ferromagnetyku. Powoduje to, że pole magnetyczne oddziaływające na cewkę ruchomą jest o wiele większe niż w przypadku ustroju elektrodynamicznego.<br><br>Zaletami takiego rozwiązania jest znacznie większy moment napędowy, większa czułość oraz mniejszy pobór mocy. Natomiast wadami takiego ustroju są: histereza magnetyczna, nieliniowość indukcji w funkcji amperozwojów oraz wpływ prądów wirowych w ferromagnetyku.<br><br>Mierniki o ustroju ferrodynamicznym stosowane są przede wszystkim w elektroenergetyce.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Magnetoelektryczny<br>Gdy przez cewkę umieszczoną w polu magnesu płynie prąd elektryczny na przewodnik działa siła od pola magnetycznego magnesu. Siła ta obraca zwojnicę, obrotowi temu przeciwdziała siła sprężystości sprężyn, co doprowadza do ustalenia się nowego punktu równowagi, w którym momenty sił równoważą się. Ponieważ cewka umocowana jest na osi, jej ruch to obrót. Kąt o jaki obróci się element ruchomy zależy od: stałej zwracania sprężyny {\displaystyle k,}{\displaystyle k,} stałej (w zakresie ruchu cewki) wartości indukcji pola magnetycznego {\displaystyle B,}B, liczby zwojów cewki {\displaystyle z,}z, średniej szerokości zwoju cewki {\displaystyle d,}d, głębokości zanurzenia cewki w szczelinie magnesu (długość na której następuje oddziaływanie) {\displaystyle l}l oraz od prądu {\displaystyle I}I przepływającego przez cewkę.<br><br>Elektromagnetyczny<br>zasada działania ustroju elektromagnetycznego polega na wzajemnym oddziaływaniu jednego lub kilku elementów ruchomych wykonanych z materiału ferromagnetycznego z jedną lub kilkoma cewkami, przez które płynie prąd mierzony (lub proporcjonalny do mierzonego). Obecnie większość mierników elektromagnetycznych posiada nieruchomą, okrągłą cewkę, w której umieszczone są dwa rdzenie, jeden ruchomy i jeden nieruchomy. Przepływ prądu przez cewkę powoduje powstanie pola magnetycznego, które powoduje magnesowanie się dwóch rdzeni. Rdzenie wskutek jednoimiennego magnesowania odpychają się, co powoduje odchylenie się wskazówki.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            elektrostatyczny<br>Zasada działania ustroju elektrostatycznego polega na wzajemnym oddziaływaniu na siebie dwóch elektrod o różnych potencjałach elektrycznych. Najprostszym przykładem, takiego ustroju jest kondensator powietrzny o jednej elektrodzie nieruchomej, a drugiej ruchomej.<br><br>Wychylenie wskazówki otrzymuje się stosując jedno z dwóch rozwiązań konstrukcyjnych. Przy zakresach napięciowych większych niż 1 kV elektroda ruchoma zbliża się do elektrody stałej. Jej przemieszczenie liniowe zamieniane jest na wychylenie wskazówki (za pomocą nici i krążka).<br><br>Drugie rozwiązanie dla zakresów napięciowych mniejszych od 1 kV polega obrocie wokół siebie ruchomej elektrody. Obracająca się elektroda wchodzi pomiędzy dwie elektrody nieruchome co powoduje zmianę wychylenia wskazówki.
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">20-Apr-20 09:58 AM</span>
+
+                        <div class="chatlog__content">
+                            w trakcie sprawdzianu
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            jak bedzie chciał z
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            mikrofonem
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            to włączcie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            teamsa na telefonie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i telefon do drugiego pokoju
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:00 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/93388427_2541147309536756_4494698973369466880_n.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/93388427_2541147309536756_4494698973369466880_n.png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/93824968_849867812156029_5238627686024216576_n.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/93824968_849867812156029_5238627686024216576_n.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:02 AM</span>
+
+                        <div class="chatlog__content">
+                            5. jest git
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            1 jest git
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            3 jest git
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:04 AM</span>
+
+                        <div class="chatlog__content">
+                            6 jest git
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:04 AM</span>
+
+                        <div class="chatlog__content">
+                            Ejj trzeba się zapytać czy w tych 4-osobowych grupach będzie się można komunikować
+
+                                <span class="chatlog__edited-timestamp" title="20-Apr-20 10:04 AM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:04 AM</span>
+
+                        <div class="chatlog__content">
+                            dajcie wysoko karmerke
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            żeby nie było widac klawiatury
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i zmutujcie sie
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            i wtedy by można to zrobić
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:05 AM</span>
+
+                        <div class="chatlog__content">
+                            oj byczq +1
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:05 AM</span>
+
+                        <div class="chatlog__content">
+                            Ja mam taki duży monitor że powiem, że niżej nie mogę bo kamerka spada
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Suicide#6766">Suicide</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:05 AM</span>
+
+                        <div class="chatlog__content">
+                            7 jest git
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:07 AM</span>
+
+                        <div class="chatlog__content">
+                            2 jest git
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:07 AM</span>
+
+                        <div class="chatlog__content">
+                            4git
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/ec9068b9bc5001e51059ba67adf13ac7.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Subuc#5155">Subuc</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:13 AM</span>
+
+                        <div class="chatlog__content">
+                            Ej 3 na pewno git?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:29 AM</span>
+
+                        <div class="chatlog__content">
+                            w tym 3 lepiej bedzie napisać tak
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            zawsze kiedy rezystancja ciała ludzkiego względem ziemi jest wieksza niz 1000ohm
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(2).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(2).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:46 AM</span>
+
+                        <div class="chatlog__content">
+                            napięcie robocze było inne niż jest tu napisane
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/5758570f3e61d5482f2d76e7b518af75.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jaszczur007#2736">Jaszczur007</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:47 AM</span>
+
+                        <div class="chatlog__content">
+                            to jak
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:48 AM</span>
+
+                        <div class="chatlog__content">
+                            to jest sc od pluty który mówi ze jest to git
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            wiec idk
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Knurson#7748">Knurson</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:48 AM</span>
+
+                        <div class="chatlog__content">
+                            GIT
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            es
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:48 AM</span>
+
+                        <div class="chatlog__content">
+                            hola espaniol
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f657f9d7aae6c5ae2c98e302dd6b8f5c.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="PanProfesor#8584">PanProfesor</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:49 AM</span>
+
+                        <div class="chatlog__content">
+                            znaczy no, mi chodziło o pojęcie z podręcznika
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            nie zauwazyłem tego screena co ty janek wysłałeśXD
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">20-Apr-20 10:54 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(3).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(3).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:01 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(4).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(4).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            n*LSB
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            1mV
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(5).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(5).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(6).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(6).png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/1eda60a5f8a07d6689fe15ab018eab87.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="⃟⃝#9529">⃟⃝</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:05 AM</span>
+
+                        <div class="chatlog__content">
+                            halo
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            też nic nie mam
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/981c5bebb7e72ccfac76bd201a71ce41.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Graciarz#1263">Graciarz</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:17 AM</span>
+
+                        <div class="chatlog__content">
+                            <i>B A G N O</i>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/f20b2a3820ce13b7d348c858deef844f.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Sztuka⚡#5151">Sztuka⚡</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:22 AM</span>
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span> <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span> <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span> <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            <span class="mention" title="Subuc#5155">@Subuc</span>
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/fc40c8e23001753f020879d4bde217f8.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Yobi#2237">Yobi</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:29 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/USER_SCOPED_TEMP_DATA_orca-image-502657094.jpeg">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/USER_SCOPED_TEMP_DATA_orca-image-502657094.jpeg">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            😆
+                                    </span>
+                                    <span class="chatlog__reaction-count">5</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/8868155d30f04604cc5f1ea8204417d1(1).png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Jango#1749">Jango</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:32 AM</span>
+
+                        <div class="chatlog__content">
+                            Double power w okularach
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(7).png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/unknown(7).png">
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__reactions">
+                                <div class="chatlog__reaction">
+                                    <span class="chatlog__reaction-emoji">
+                                            <img class="emoji emoji--small" title="Menahmm" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/704668301753581580.png">
+                                    </span>
+                                    <span class="chatlog__reaction-count">2</span>
+                                </div>
+                        </div>
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">20-Apr-20 11:35 AM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/hseetl7u4xt41.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/hseetl7u4xt41.png">
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/51f1285de84d1e5dc1256d68e3fa443d.png">
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Blasted#3539">Blasted</span>
+                <span class="chatlog__timestamp">20-Apr-20 02:18 PM</span>
+
+                        <div class="chatlog__content">
+                            <a href="https://sciaga.pl/tekst/28873-29-pradnice_pradu_stalego">https://sciaga.pl/tekst/28873-29-pradnice_pradu_stalego</a>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(79,84,92,255)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://sciaga.pl/tekst/28873-29-pradnice_pradu_stalego">Prądnice prądu stałego</a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">Maszyna elektryczne którą jest napędzana może pracować jako prądnica Po wprowadzeniu w ruch wirnika maszyny oraz zapewnieniu warunków wzbudzenia maszynę...</div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/favicon-96x96.webp">
+                                                <img class="chatlog__embed-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/favicon-96x96.webp">
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+                        <div class="chatlog__content">
+                            <a href="https://www.bryk.pl/wypracowania/fizyka/obwody-elektryczne/19448-pradnice-pradu-stalego.html">https://www.bryk.pl/wypracowania/fizyka/obwody-elektryczne/19448-pradnice-pradu-stalego.html</a>
+
+                        </div>
+
+
+                        <div class="chatlog__embed">
+                            <div class="chatlog__embed-color-pill" style="background-color: rgba(255,255,255,1)"></div>
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://www.bryk.pl/wypracowania/fizyka/obwody-elektryczne/19448-pradnice-pradu-stalego.html">Prądnice prądu stałego - Ściągi, wypracowania, lektury - Bryk.pl</a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">Kliknij i zobacz więcej.</div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/logo-bryk-og-image.png">
+                                                <img class="chatlog__embed-thumbnail" src="./Technicy Automatyki - ⚡automatyczne-zadania-dla-pluty⚡_files/logo-bryk-og-image.png">
+                                            </a>
+                                        </div>
+                                </div>    
+
+
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+</div>
+
+
+</body></html>
